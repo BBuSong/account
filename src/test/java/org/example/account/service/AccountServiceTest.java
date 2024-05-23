@@ -6,7 +6,6 @@ import org.example.account.dto.AccountDto;
 import org.example.account.exception.AccountException;
 import org.example.account.repository.AccountRepository;
 import org.example.account.repository.AccountUserRepository;
-import org.example.account.type.AccountStatus;
 import org.example.account.type.ErrorCode;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
