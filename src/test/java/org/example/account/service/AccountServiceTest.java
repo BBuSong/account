@@ -94,12 +94,8 @@ class AccountServiceTest {
     @DisplayName("해당 유저 없음 - 계좌 생성 실패")
     void createAccount_UserNotFound() {
         //given
-        AccountUser user = AccountUser.builder()
-                .id(16L)
-                .name("Pobi").build();
         given(accountUserRepository.findById(anyLong()))
                 .willReturn(Optional.empty());
-        ArgumentCaptor<Account> captor = ArgumentCaptor.forClass(Account.class);
 
         //when
         AccountException exception = assertThrows(AccountException.class,
